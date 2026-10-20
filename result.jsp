@@ -3,23 +3,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Student Details</title>
+    <title>Registration Result</title>
 </head>
 <body>
-    <h2>Submitted Student Information</h2>
+    <h2>Registration Successful!</h2>
 
     <%
         String name = request.getParameter("name");
-        String roll = request.getParameter("roll");
-        String course = request.getParameter("course");
         String email = request.getParameter("email");
+        String phone = request.getParameter("phone");
+        String password = request.getParameter("password");
     %>
 
-    <p>Student Name: <%= name %></p>
-    <p>Roll Number: <%= roll %></p>
-    <p>Course: <%= course %></p>
+    <p>Name: <%= name %></p>
     <p>Email: <%= email %></p>
+    <p>Phone Number: <%= phone %></p>
+    <p>Password: ********</p>
 
-    <a href="student.jsp">Go Back</a>
+    <a href="register.jsp">Register Another User</a>
 </body>
 </html>
